@@ -356,7 +356,7 @@ frutas.unshift("Morango"); // vai mudar o indice de todos os elementos
 console.log(frutas);
 
 // remove o primeiro elemento [0] morango
-frutas.shift("");
+frutas.shift();
 console.log(frutas)
 
 // verifica se um elemento existe
