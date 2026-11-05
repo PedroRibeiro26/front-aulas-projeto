@@ -321,4 +321,61 @@ let indice = 6;
 do{
     console.log(indice);
     indice++;
-}while(indice < 5)
+}while(indice < 5){}
+
+
+
+
+
+/*********************************************
+ * arrays - estrutura de dados
+ * quando a gente precisa armazenar mais de um dado
+ */
+
+// declara array e seus elementos dentro dele
+// let alunos = ["João", "Maria", "Pedro", "Ana", "Carlos"]; //declara
+
+// console.log(alunos); // mostra todos os elementos do array
+// console.log(alunos[0]); // mostra o aluno do array pedido [0]
+
+
+let frutas = ["Maça","Banana","Uva"];
+console.log(frutas.length); // retorna o tamanho do array
+
+
+// acrescenta um novo item ao array, sempre no final
+frutas.push("Laraja"); // sempre adiciona na ultima posição
+console.log(frutas);
+
+// remove um elemento na ultima posição
+frutas.pop(); // sempre remove o ultimo elemento
+console.log(frutas);
+
+// adicionar ao inicio do array
+frutas.unshift("Morango"); // vai mudar o indice de todos os elementos
+console.log(frutas);
+
+// remove o primeiro elemento [0] morango
+frutas.shift("");
+console.log(frutas)
+
+// verifica se um elemento existe
+console.log(frutas.includes("Maça")); // retona true ou false se o elemento estiver ou não dentro do array
+
+
+
+/***************************************************************************************************
+ * ARRAY - MATRIZES
+ */
+
+const matriz = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+
+for(let i=0; i<matriz.length;i++){
+    for(let j = 0; j < matriz.length; j++){
+        console.log(matriz[i][j])
+    }
+}
